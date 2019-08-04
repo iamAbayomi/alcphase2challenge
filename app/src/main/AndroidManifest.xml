@@ -23,7 +23,7 @@
 
         </activity>
 
-        <activity android:name=".InsertActivity">
+        <activity android:name=".DealActivity">
 
         </activity>
 
