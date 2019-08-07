@@ -14,7 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ListActivity">
+
+        <activity android:name=".ListActivity"
+                  android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +26,9 @@
 
         </activity>
 
-        <activity android:name=".DealActivity">
+        <activity android:name=".DealActivity"
+            android:screenOrientation="portrait"
+            >
 
         </activity>
 

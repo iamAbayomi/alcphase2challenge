@@ -1,21 +1,25 @@
 package com.appdot.io.travelmantics_app;
 
-public class TravelDeals {
+import java.io.Serializable;
+
+public class TravelDeals implements Serializable {
     private String id;
     private String title;
     private String description;
     private String price;
     private String imageUrl;
+    private String imageName;
 
     public TravelDeals(){
 
     }
 
-    public TravelDeals(String title, String description, String price, String imageUrl) {
+    public TravelDeals(String title, String description, String price, String imageUrl, String imageName) {
         this.setTitle(title);
         this.setDescription(description);
         this.setPrice(price);
         this.setImageUrl(imageUrl);
+        this.setImageName(imageName);
     }
 
     public String getId() {
@@ -56,5 +60,13 @@ public class TravelDeals {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
     }
 }
